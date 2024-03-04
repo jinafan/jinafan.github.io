@@ -1,9 +1,17 @@
 title: Jina Fan
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  Thank you for visiting my project page.
+description:
+  <p align="center">
+  <a href="https://www.linkedin.com/in/jinafan/">LinkedIn</a> |
+  </p>
+  
+  <p align="justify">
+  My background...
   <br><br>
-  <a href="https://www.linkedin.com/in/jinafan/">LinkedIn</a> 
+  My projects...
+  <br><br>
+  </p>
+
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
