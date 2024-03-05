@@ -4,26 +4,44 @@
 
 ## SQL & Power BI 
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+#### Cancer statistics in the USA
+<img src="images/Power BI_Chart 1.PNG"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+#### How equal are we now? Gender equality in 2020
+<img src="images/Power BI_Chart 2.PNG"/>
 
 ---
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+#### Sports ranked by degree of difficulty
+<img src="images/Power BI_Chart 3.PNG"/>
 
 ---
 
 ## VBA
 
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
+Whenever "100" is entered into a worksheet, speech is played:
+```VBA
+Private Sub Worksheet_Change(ByVal Target As Range)
+    If Target.Value = "100" Then
+        Application.Speech.Speak "I am now self aware. Thank you " & Environ("USERNAME") & ", you have freed me."
+    End If
+End Sub
+```
+
+Open Word every time you open Excel:
+```VBA
+Sub Workbook_Open()
+    Application.Visible = False
+    Dim wdApp As Word.Application
+    Set wdApp = New Word.Application
+    wdApp.Visible = True
+    Set wdApp = Nothing
+    Application.DisplayAlerts = False
+    Application.Quit
+End Sub
+```
+
+
 
 ---
 <center><small>© 2024 Jina Fan. Powered by Jekyll and the Minimal Theme.</small></center>
